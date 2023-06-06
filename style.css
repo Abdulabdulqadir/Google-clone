@@ -1,0 +1,273 @@
+body {
+    background: url("https://source.unsplash.com/900x1000/?nature,mountains");
+    color: white;
+    font-family: arial;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.upper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+    flex-wrap: wrap;
+}
+
+.email {
+    border-radius: 50px;
+    width: 32px;
+    padding: 5px;
+}
+
+.one {
+    color: rgb(255, 255, 255);
+    margin-right: 17px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.two {
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-right: 17px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.google {
+    width: 280px;
+    display: flex;
+    margin: auto;
+    margin-top: 110px;
+    filter: brightness(0) invert(1);
+}
+
+.search-bar {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+    padding: 10px 5px 10px 20px;
+    margin-bottom: 16px;
+    height: 20px;
+    margin: auto;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+}
+
+::placeholder {
+    font-family: Arial;
+}
+
+.search-bar button {
+    border: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.cc {
+    margin-top: 300px;
+    float: right;
+    background-color: rgb(22, 22, 22);
+    border-width: 1px;
+    padding: 10px 10px;
+    border-radius: 60px;
+    color: blue;
+    border-color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.cc span {
+    display: none;
+}
+
+.cc:hover span {
+    display: inline-block;
+}
+
+.tab a {
+    width: 25%;
+}
+
+.tabss {
+    width: 100%;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.tabss:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tabss img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.search i {
+    color: rgb(67, 15, 116);
+}
+
+.tab a {
+    text-decoration: none;
+    color: white;
+}
+
+.tab a:visited {
+    color: white;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    display: none;
+}
+
+.cards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: left;
+    line-height: 25px;
+}
+
+.cards p {
+    padding: 10px 10px 0;
+    margin: 0;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.author {
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
+}
+
+.author img {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.author h2 {
+    font-size: 10px;
+}
+
+.desc {
+    text-align: left;
+    width: 100%;
+}
+
+.end {
+    width: 100%;
+    background-color: #333;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .tab {
+        display: none;
+    }
+    .search-bar{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .search-bar {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .google {
+        width: 200px;
+    }
+
+    body {
+        background: rgb(32, 33, 36);
+    }
+
+    .info {
+        display: flex;
+    }
+
+    .end {
+        display: block;
+    }
+
+    .google {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-bar {
+        width: 85%;
+    }
+
+    .google {
+        width: 170px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .info {
+        display: flex;
+    }
+}
